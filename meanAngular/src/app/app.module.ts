@@ -4,6 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { ApiService } from './services/api.service';
+
+import { MatInputModule,
+  MatCardModule,
+  MatButtonModule,
+  MatToolbarModule,
+MatExpansionModule} from '@angular/material';
+import {BrowserAnimationsModule} from  '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +18,14 @@ import { ApiService } from './services/api.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+  MatCardModule,
+  MatButtonModule,
+  MatToolbarModule,
+MatExpansionModule,
+BrowserModule,
+BrowserAnimationsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
